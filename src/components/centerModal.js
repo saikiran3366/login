@@ -47,7 +47,7 @@ const CenterModal = ({showModal,closeModal,fname,lname,uname,email,password,shor
                     // boxShadow: 24,
                     p: 4,}}
                 >
-                  <h1>Your Details</h1>
+                  <h1>Your Deetails</h1>
                   <h4 >{"FirstName : " + fname}</h4>
                   <h4 >{"LastName : " + lname}</h4>
                   <h4 >{"Email : " + email}</h4>
