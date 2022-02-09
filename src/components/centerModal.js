@@ -10,18 +10,6 @@ const CenterModal = ({showModal,closeModal,fname,lname,uname,email,password,shor
         closeModal()
         callBack()
     }
-
-    // const style = {
-    //     position: 'absolute',
-    //     top: '50%',
-    //     left: '50%',
-    //     transform: 'translate(-50%, -50%)',
-    //     width: 400,
-    //     bgcolor: 'background.paper',
-    //     border: '2px solid #000',
-    //     boxShadow: 24,
-    //     p: 4,
-    //   };
     return(
             <div >
               <Modal
@@ -40,11 +28,9 @@ const CenterModal = ({showModal,closeModal,fname,lname,uname,email,password,shor
                     transform: 'translate(-50%, -50%)',
                     width: 400,
                     bgcolor: 'background.paper',
-                    // border: '2px solid #000',
                     borderRadius:15,
                     height:600,
                     backgroundColor:'white',
-                    // boxShadow: 24,
                     p: 4,}}
                 >
                   <h1>Your Deetails</h1>
@@ -61,11 +47,8 @@ const CenterModal = ({showModal,closeModal,fname,lname,uname,email,password,shor
                         Close
                 </Button> 
                 </div>
-
-               
               </Modal>
             </div>
-          
     )
 }
 

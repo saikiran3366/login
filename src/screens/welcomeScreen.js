@@ -8,8 +8,8 @@ const WelcomeScreen = () =>{
               <div style={{width:'80%',height:80,backgroundColor:'red',display:'flex',flexDirection:'row',justifyContent: 'space-around'}}>
               <Link to="/TodoApp"><h4>Todo App</h4></Link>
               <Link to="/RegisterForm"><h4>Register Form</h4></Link>
-               <h4>Todo App</h4>
-               <h4>Register Form</h4>
+               <Link to ="/Calculator"><h4>Calculator</h4></Link>
+               <Link to ="/Movies"><h4>Movies</h4></Link>
               </div>
               
            </div>
