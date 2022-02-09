@@ -10,6 +10,7 @@ import built4 from '../assets/searchApp.JPG';
 
 const WelcomeScreen = () =>{
     const sym = "</>"
+    const and = "&"
 
     const imgGallery =[
         {key: built1},
@@ -19,20 +20,20 @@ const WelcomeScreen = () =>{
     ]
     
     return(
-       <div style={{height:1500,backgroundColor:'green'}}>
-           <div style={{height:60,backgroundColor:'grey',display:'flex',flexDirection:'row',alignItems:'center'}}>
-              <div style={{width:'80%',height:60,backgroundColor:'grey',display:'flex',flexDirection:'row',justifyContent: 'space-around',width:'30%'}}>
+       <div >
+           <div style={{height:60,backgroundColor:'black',display:'flex',flexDirection:'row',alignItems:'center'}}>
+              <div style={{width:'80%',height:60,backgroundColor:'black',display:'flex',flexDirection:'row',justifyContent: 'space-around',width:'30%'}}>
               <Link to="/TodoApp" style={{textDecoration: 'none'}}><h4 style={{color:'white'}}>Todo App</h4></Link>
               <Link  to="/RegisterForm" style={{textDecoration: 'none'}}><h4 style={{color:'white'}}>Register Form</h4></Link>
                <Link to ="/Calculator" style={{textDecoration: 'none'}}><h4 style={{color:'white'}}>Calculator</h4></Link>
                <Link to ="/Movies" style={{textDecoration: 'none'}}><h4 style={{color:'white'}}>Search App</h4></Link>
               </div>
-              <div style={{height:60,width:'70%',backgroundColor:'grey',display:'flex',justifyContent: 'flex-end',paddingRight:20}}>
-                  <h4 style={{color:'white',color:'blue'}}>Nice to meet you...</h4>
+              <div style={{height:60,width:'70%',backgroundColor:'black',display:'flex',justifyContent: 'flex-end',paddingRight:20}}>
+                  <h4 style={{color:'white',color:'grey'}}>Nice to meet you...</h4>
               </div>
            </div>
-           
-           <div style={{height:400,backgroundColor:'white',display:'flex',flexDirection:'row'}}>
+          
+           <div style={{height:400,backgroundColor:'white',display:'flex',flexDirection:'row',paddingTop:20}}>
                <div style={{height:400,width:'50%',backgroundColor:'white',display:'flex',flexDirection:'column',justifyContent: 'center',paddingLeft:50}}>
                     <h1 style={{color:'black',margin:0}}>Hi,I'm Sai.<br/> I love to build amazing apps. </h1>
                     <p style={{marginTop:5,color:'black'}}>lorem ipsum dolor sit amet, consectetur adipiscing<br/>lorem ipsum dolor sit amet, consectetur adip<br/>lorem ipsum dolor sit amet, consectetur adip</p>
@@ -40,13 +41,13 @@ const WelcomeScreen = () =>{
                     <Button  
                         variant="contained" 
                         style={{textDecoration: 'none',marginTop:20,marginRight:20}}>
-                        Work With Me
+                         <a href="https://www.linkedin.com/"  target="_blank" style={{textDecoration: 'none',color:'white'}}>LinkedIn</a>
                     </Button>
 
                     <Button  
                         variant="contained" 
-                        style={{textDecoration: 'none',marginTop:20,background:'grey'}}>
-                        See My Past Work
+                        style={{textDecoration: 'none',marginTop:20,background:'green'}}>
+                        <a href="https://github.com/"   target="_blank" style={{textDecoration: 'none',color:'white'}}>GitHub</a>
                     </Button>
                     </div>
                </div>
@@ -56,22 +57,65 @@ const WelcomeScreen = () =>{
                </div>
            </div>
 
-           <div style={{height:200,backgroundColor:'white',display:'flex',alignItems:'center',flexDirection:'column'}}>
+           <div style={{height:200,backgroundColor:'white',display:'flex',alignItems:'center',flexDirection:'column',paddingTop:50}}>
                <h1 style={{margin:0}}>{sym}</h1>
                <h1 style={{margin:5}}>Apps I've Built</h1>
                <p style={{margin:0}}>lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip</p>
                <p style={{margin:0}}>lorem ipsum dolor lorem ipsum dolor sit am</p>
            </div>
 
-           <div style={{display:'flex',justifyContent: 'center',marginTop:100}}>
+           <div style={{display:'flex',justifyContent: 'center',marginTop:0}}>
                    
-                   <div style={{height:730,width:'75%',background:' linear-gradient(lightgreen,black)',justifyContent: 'space-around',alignItems: 'center',display:'flex',flexDirection:'row',flexWrap:'wrap',borderRadius:15}}>
+                   <div style={{height:730,width:'75%',background:'linear-gradient(yellow,lightgreen)',justifyContent: 'space-around',alignItems: 'center',display:'flex',flexDirection:'row',flexWrap:'wrap',borderRadius:15}}>
                    {imgGallery.map((item)=>{
                        return(
                         <img src={item.key} width='500' height='300' style={{borderRadius:15}}/> 
                     )
                     })}
                    </div>
+           </div>
+
+           <div>
+               <div style={{height:750,backgroundColor:'black',display:'flex',flexDirection:'column',alignItems:'center'}}>
+                   <h1 style={{color:'white'}}>
+                       Skills {and} Technologies
+                   </h1>
+                    <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+                        <p style={{margin:0,color:'white'}}>lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip</p>
+                        <p style={{margin:0,color:'white'}}>lorem ipsum dolor lorem ipsum dolor sit am</p>
+                    </div>
+                    <div style={{height:300,width:'60%',backgroundColor:'black',marginTop:60,justifyContent: 'center',display:'flex',flexDirection:'column'}}>
+
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around'}}>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>JavaScript</h4>
+                        </div>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>React</h4>
+                        </div>
+                        </div>
+
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',paddingTop:30}}>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>JavaScript</h4>
+                        </div>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>React</h4>
+                        </div>
+                        </div>
+
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',paddingTop:30}}>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>JavaScript</h4>
+                        </div>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <h4 style={{color:'white'}}>React</h4>
+                        </div>
+                        </div>
+
+                    </div>
+               </div>
+               
            </div>
        </div>
 
