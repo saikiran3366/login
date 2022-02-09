@@ -12,7 +12,7 @@ const Home = () =>{
             <div style={{width:'50%',backgroundColor:'red',background: `url(${image})`}}>
             </div>
 
-            <div style={{width:'50%',backgroundColor:'red',alignItems:'center',display:'flex',flexDirection:'column'}}>
+            <div style={{width:'50%',backgroundColor:'white',alignItems:'center',display:'flex',flexDirection:'column'}}>
                 <div style={{marginTop:50,display:'flex',flexDirection:'column',width:'50%'}}>
                     <h1 style={{margin:5}}>Login
                     </h1>
