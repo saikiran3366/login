@@ -4,6 +4,8 @@ import Home from '../src/screens/home';
 import TodoApp from '../src/screens/todo';
 import WelcomeScreen from '../src/screens/welcomeScreen';
 import RegisterForm from '../src/screens/registerForm';
+import Calculator from '../src/screens/calculator';
+import Movies from '../src/screens/movies';
 
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
           <Route path ="/welcomeScreen" component={WelcomeScreen} />
           <Route path ="/TodoApp" component ={TodoApp}/>
           <Route path ="/RegisterForm" component ={RegisterForm}/>
+          <Route path="/Calculator" component = {Calculator}></Route>
+          <Route path="/Movies" component = {Movies}></Route>
+
       </Switch>
     </Router>
   //  <Home/>
