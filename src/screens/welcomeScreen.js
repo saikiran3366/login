@@ -6,6 +6,13 @@ import built1 from '../assets/todoImg.JPG';
 import built2 from '../assets/regForm.JPG';
 import built3 from '../assets/calcu.JPG';
 import built4 from '../assets/searchApp.JPG';
+import {faMicrochip} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { FcApproval } from "react-icons/fc";
+import {BsFillTelephoneFill } from "react-icons/bs";
+import {MdEmail } from "react-icons/md";
+
+
 
 
 const WelcomeScreen = () =>{
@@ -69,7 +76,9 @@ const WelcomeScreen = () =>{
                    <div style={{height:730,width:'75%',background:'linear-gradient(yellow,lightgreen)',justifyContent: 'space-around',alignItems: 'center',display:'flex',flexDirection:'row',flexWrap:'wrap',borderRadius:15}}>
                    {imgGallery.map((item)=>{
                        return(
-                        <img src={item.key} width='500' height='300' style={{borderRadius:15}}/> 
+                        <img src={item.key} width='500' height='300' style={{borderRadius:15,hover: {
+                            background: 'red'
+                          }}}/> 
                     )
                     })}
                    </div>
@@ -77,6 +86,7 @@ const WelcomeScreen = () =>{
 
            <div>
                <div style={{height:750,backgroundColor:'black',display:'flex',flexDirection:'column',alignItems:'center'}}>
+               <FontAwesomeIcon icon={faMicrochip} size='2x' style={{color:'white',marginTop:40}}></FontAwesomeIcon>
                    <h1 style={{color:'white'}}>
                        Skills {and} Technologies
                    </h1>
@@ -87,33 +97,54 @@ const WelcomeScreen = () =>{
                     <div style={{height:300,width:'60%',backgroundColor:'black',marginTop:60,justifyContent: 'center',display:'flex',flexDirection:'column'}}>
 
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around'}}>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>JavaScript</h4>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25} style={{paddingLeft:20}} />
+                            <h4 style={{color:'white',paddingLeft:5}}>React</h4>
                         </div>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>React</h4>
-                        </div>
-                        </div>
-
-                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',paddingTop:30}}>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>JavaScript</h4>
-                        </div>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>React</h4>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25} style={{paddingLeft:20}} />
+                            <h4 style={{color:'white',paddingLeft:5}}>JavaScript</h4>
                         </div>
                         </div>
 
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',paddingTop:30}}>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>JavaScript</h4>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25}  style={{paddingLeft:20}}/>
+                            <h4 style={{color:'white',paddingLeft:5}}>Bootstrap</h4>
                         </div>
-                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                            <h4 style={{color:'white'}}>React</h4>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25} style={{paddingLeft:20}} />
+                            <h4 style={{color:'white',paddingLeft:5}}>Html</h4>
                         </div>
                         </div>
+
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',paddingTop:30}}>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25} style={{paddingLeft:20}} />
+                            <h4 style={{color:'white',paddingLeft:5}}>Css</h4>
+                        </div>
+                        <div style={{height:50,width:400,backgroundColor:'grey',display:'flex',alignItems:'center'}}>
+                            <FcApproval size={25}  style={{paddingLeft:20}} />
+                            <h4 style={{color:'white',paddingLeft:5}}>GitHub</h4>
+                        </div>
+                        </div>
+
+                        
 
                     </div>
+                        <div style={{display:'flex',flexDirection:'row',justifyContent: 'space-around',width:'70%',paddingTop:50}}>
+                        <div style={{display:'flex',alignItems:'center'}}>
+                            <BsFillTelephoneFill color='grey'/>
+                            <h4 style={{color:'grey',paddingLeft:10}}>9032238487</h4>
+                        </div>
+
+                        <div style={{display:'flex'}}>
+                        <div style={{display:'flex',alignItems:'center'}}>
+                            <MdEmail color="grey" size={25}/>
+                            <h4 style={{color:'grey',paddingLeft:10}}>saikiranmaredu@gmail.com</h4>
+                            </div>
+                        </div>
+                        </div>
                </div>
                
            </div>
