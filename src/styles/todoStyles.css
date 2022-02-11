@@ -1,0 +1,28 @@
+.fieldStyle {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainDiv {
+  width: 420;
+  background-color: linear-gradient(#7b4397, #dc2430);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.mainDiv::-webkit-scrollbar {
+  display: none;
+}
+
+/* style={{",',','}} */
+
+.mainBackground {
+  height: 750 !important;
+  background-image: linear-gradient(#7b4397, #dc2430);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

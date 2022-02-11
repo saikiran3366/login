@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import '../styles/todoStyles.css';
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBell, faPlusSquare,faCheckSquare,faTrash} from '@fortawesome/free-solid-svg-icons'
@@ -27,11 +28,11 @@ const TodoApp =() =>{
 
     return(
         <div>
-            <div style={{height:750,background: "linear-gradient( #9198e5,#e66465)",display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div style={{height:750,background: "linear-gradient(  #7b4397,#dc2430)",display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <h1  style ={{fontFamily: 'Pacifico',fontSize:'300%',color:"black",margin:0,}}>
                     Todo List
                 </h1>
-                <div style={{margin:0,display:'flex',flexDirection:'row',alignItems:'center'}}>
+                <div className="fieldStyle">
                     <TextField  
                         value={text}
                         onChange={(e)=>setText(e.target.value)}
@@ -43,22 +44,22 @@ const TodoApp =() =>{
                     />
                     <FontAwesomeIcon 
                     onClick={handleAdd}
-                    style={{paddingLeft:20,}}
+                    style={{paddingLeft:20,color:"black"}}
                     size="3x" icon= {faPlusSquare} 
                     ></FontAwesomeIcon>
                 </div>
 
-                <div style={{height:600,width:420,backgroundColor:"linear-gradient( #9198e5,#e66465)",display:'flex',flexDirection:'column',  overflowY: 'scroll',scrollBarHidden:'true',webkitScrollBarHidden:'none'}}>
+                <div className="mainDiv">
                 {todo.map((item)=>{
                     return( 
                         <div style={{paddingTop:50,display:'flex',flexDirection:'row'}}>
                         <div style={{height:50,width:300,backgroundColor:'white',borderRadius:10,border:'2px solid black',alignItems:'center',display:'flex'}}>
-                            <h1>{item}</h1>
+                            <h4 style={{paddingLeft:10}}>{item}</h4>
                         </div>
                         
                             <div style={{display:'flex',flexDirection:"row",alignItems:'center'}}>
                             
-                            <FontAwesomeIcon onClick={()=>{handleDelete(item)}} style={{paddingLeft:20,}}size="2x" icon= {faTrash} ></FontAwesomeIcon>
+                            <FontAwesomeIcon onClick={()=>{handleDelete(item)}} style={{paddingLeft:20,color:'black'}}size="2x" icon= {faTrash} ></FontAwesomeIcon>
                             </div>
                             
                     </div>
